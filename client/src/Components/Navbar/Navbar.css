@@ -1,0 +1,155 @@
+.nav-container {
+    width: 100%;
+    background-color: #0d6efd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 0px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navtext-left {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu-sec ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-sec ul li {
+    display: inline;
+  }
+  
+  .menu-sec ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .menu-sec ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  .nav-right .log-btn {
+    background-color: white;
+    color: #0d6efd;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .nav-right .log-btn:hover {
+    background-color: #ffcc00;
+    color: black;
+  }
+  
+  .sidebar-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.8rem;
+  }
+  
+  .burger-menu {
+    transition: 0.3s;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-sec {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #0d6efd;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .menu-sec.open {
+      display: flex;
+    }
+  
+    .menu-sec ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .menu-sec ul li {
+      margin: 10px 0;
+    }
+  
+    .sidebar-toggle {
+      display: block;
+    }
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 425px) {
+    .nav-wrapper{
+      padding: 10px;
+    }
+    .navtext-left {
+      font-size: 1.3rem;
+    }
+  
+    .nav-right .log-btn {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  
+    .sidebar-toggle {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .nav-wrapper{
+      padding: 10px;
+    }
+    .navtext-left {
+      font-size: 1.2rem;
+    }
+  
+    .nav-right .log-btn {
+      padding: 5px 10px;
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .nav-wrapper{
+      padding: 10px;
+    }
+    .navtext-left {
+      font-size: 1rem;
+    }
+  
+    .nav-right .log-btn {
+      padding: 5px 8px;
+      font-size: 0.8rem;
+    }
+  
+    .sidebar-toggle {
+      font-size: 1.4rem;
+    }
+  }
+  

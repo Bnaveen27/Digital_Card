@@ -1,0 +1,194 @@
+.login-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  background-color: #dbfff9;
+  font-family: Arial, sans-serif;
+}
+
+.login-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  border: 2px solid #6a0dad;
+}
+
+.log-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.subtext {
+  color: #6a0dad;
+  margin-bottom: 20px;
+}
+
+.log-input {
+  width: 100%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #dffaf4;
+  font-size: 16px;
+}
+
+.forgot-password {
+  color: #6a0dad;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #10bfbf;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #0a9a9a;
+}
+
+.signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link {
+  color: #00a99d;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet View (768px) */
+@media (max-width: 768px) {
+  .login-form {
+    width: 350px;
+    padding: 25px;
+  }
+
+  .log-title {
+    font-size: 20px;
+  }
+
+  .log-input {
+    padding: 10px 5px;
+    font-size: 15px;
+  }
+
+  .login-btn {
+    font-size: 16px;
+  }
+}
+
+/* Mobile View (425px) */
+@media (max-width: 425px) {
+  .login-form {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .log-title {
+    font-size: 18px;
+  }
+
+  .log-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .forgot-password {
+    font-size: 13px;
+  }
+
+  .login-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .signup-text {
+    font-size: 13px;
+  }
+}
+
+/* Smaller Mobile View (375px) */
+@media (max-width: 375px) {
+  .login-form {
+    width: 280px;
+    padding: 18px;
+  }
+
+  .log-title {
+    font-size: 16px;
+  }
+
+  .log-input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .forgot-password {
+    font-size: 12px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-text {
+    font-size: 12px;
+  }
+}
+
+/* Extra Small Mobile View (320px) */
+@media (max-width: 320px) {
+  .login-form {
+    width: 260px;
+    padding: 15px;
+  }
+
+  .log-title {
+    font-size: 15px;
+  }
+
+  .log-input {
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  .forgot-password {
+    font-size: 11px;
+  }
+
+  .login-btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .signup-text {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,318 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homepage {
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  position: relative;
+  background: white;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6a0dad;
+  position: relative;
+  z-index: 2;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #9065e5;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+}
+
+.create-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid #14cba8;
+  background: transparent;
+  color: #14cba8;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.create-btn:hover {
+  background: #14cba8;
+  color: white;
+}
+
+.background-bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(30px); /* Adds a smooth glow effect */
+}
+
+.bubble1 {
+  width: 250px;
+  height: 250px;
+  background: #ba9ff8;
+  top: 10%;
+  left: 5%;
+}
+
+.bubble2 {
+  width: 150px;
+  height: 150px;
+  background: #14cba8;
+  top: 5%;
+  left: 95%;
+}
+
+.bubble3 {
+  width: 100px;
+  height: 100px;
+  background: #ba9ff8;
+  bottom: 30%;
+  left: 20%;
+}
+
+.bubble4 {
+  width: 200px;
+  height: 200px;
+  background: #14cba8;
+  bottom: 10%;
+  right: 5%;
+}
+
+.bubble5 {
+  width: 180px;
+  height: 180px;
+  background: #ba9ff8;
+  bottom: 5%;
+  right: 30%;
+}
+
+.features-section {
+  background-color: #5e2db6;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+  
+}
+
+.features-title {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #9b72e3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  color: white;
+}
+
+.footer {
+  background-color: rgb(139 92 246);
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet View (768px) */
+@media (max-width: 768px) {
+  .title {
+      font-size: 2.5rem;
+  }
+
+  .description {
+      font-size: 1.1rem;
+      max-width: 90%;
+  }
+
+  .features-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .bubble1 {
+      width: 180px;
+      height: 180px;
+      left: 10%;
+  }
+
+  .bubble2 {
+      width: 120px;
+      height: 120px;
+      right: 10%;
+  }
+
+  .bubble3, .bubble4, .bubble5 {
+      display: none; /* Hide extra bubbles for better mobile experience */
+  }
+}
+
+/* Mobile View (425px) */
+@media (max-width: 425px) {
+  .title {
+      font-size: 2rem;
+  }
+
+  .description {
+      font-size: 1rem;
+      max-width: 90%;
+  }
+
+  .create-btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+
+  .features-title {
+      font-size: 2rem;
+  }
+
+  .features-container {
+      grid-template-columns: 1fr;
+  }
+
+  .bubble1 {
+      width: 120px;
+      height: 120px;
+      left: 5%;
+  }
+
+  .bubble2 {
+      width: 100px;
+      height: 100px;
+      right: 5%;
+  }
+}
+
+/* Smaller Mobile View (375px) */
+@media (max-width: 375px) {
+  .homepage{
+    margin-top: 20px;
+    }
+  .title {
+      font-size: 1.8rem;
+  }
+
+  .description {
+      font-size: 0.9rem;
+  }
+
+  .create-btn {
+      font-size: 1rem;
+      padding: 6px 14px;
+  }
+  .features-section{
+    margin-top: 25px;
+  }
+
+  .features-title {
+      font-size: 1.8rem;
+  }
+
+  .features-description {
+      font-size: 1rem;
+  }
+
+  .footer {
+      font-size: 14px;
+  }
+}
+
+/* Extra Small Mobile View (320px) */
+@media (max-width: 320px) {
+  .homepage{
+  margin-top: 20px;
+  }
+  .title {
+      font-size: 1.6rem;
+  }
+
+  .description {
+      font-size: 0.8rem;
+  }
+
+  .create-btn {
+      font-size: 0.9rem;
+      padding: 5px 12px;
+  }
+  .features-section{
+    margin-top: 25px;
+  }
+
+  .features-title {
+      font-size: 1.6rem;
+  }
+
+  .features-description {
+      font-size: 0.9rem;
+  }
+
+  .footer {
+      font-size: 12px;
+  }
+}
