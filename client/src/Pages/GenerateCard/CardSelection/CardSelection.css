@@ -1,0 +1,38 @@
+.card-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .organization {
+    background-color: #3b82f6;
+  }
+  
+  .student {
+    background-color: #10b981;
+  }
+  
+  .event {
+    background-color: #ef4444;
+  }
+  

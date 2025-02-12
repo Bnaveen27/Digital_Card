@@ -1,0 +1,155 @@
+/* General Page Styling */
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    padding: 20px;
+    position: relative;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    width: 90%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Content - Centered Layout */
+.form-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Center Divider Line */
+.form-divider {
+    width: 2px;
+    height: 80%;
+    background: #6200ea;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+/* Left Side - Form Inputs */
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 45%;
+}
+
+/* Right Side - Description */
+.form-description {
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    padding: 10px;
+    max-width: 45%;
+}
+
+/* Input Fields */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+    background: #f7f7f7;
+}
+
+.form-input:focus {
+    border-color: #6200ea;
+    box-shadow: 0px 0px 5px rgba(98, 0, 234, 0.2);
+    background: #fff;
+}
+
+/* File Input */
+.form-input-file {
+    border: 2px dashed #ccc;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-input-file:hover {
+    border-color: #6200ea;
+}
+
+/* Submit Button */
+.form-button {
+    background: #6200ea;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form-button:hover {
+    background: #4b00c2;
+    box-shadow: 0px 3px 10px rgba(98, 0, 234, 0.3);
+}
+
+/* Back Button */
+.back-btn {
+    margin-top: 20px;
+    background: none;
+    color: #6200ea;
+    padding: 10px 15px;
+    border: 2px solid #6200ea;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #6200ea;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .form-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .form-divider {
+        display: none; /* Hide the divider on small screens */
+    }
+
+    .form-section, .form-description {
+        max-width: 100%;
+        text-align: center;
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
-
+import Footer from "../../Components/Footer/Footer";
+import { FaUserShield, FaMagic, FaCheckCircle } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="home-container">
@@ -24,39 +25,31 @@ const Home = () => {
       </div>
 
       <section className="features-section">
-        <h2 className="features-title">Our Features</h2>
+        <h2 className="features-title">Why Choose Us?</h2>
         <p className="features-description">
-          Digital Cards makes it simple to create professional ID cards for your
-          organization or events.
+          We offer an innovative and efficient way to create professional ID cards.
         </p>
         <div className="features-container">
           <div className="feature-card">
-            <h3>Easy to Use</h3>
-            <p>
-              Digital Cards makes it simple to create professional ID cards for
-              your organization or events.
-            </p>
+            <FaUserShield className="feature-icon" />
+            <h3>Secure & Reliable</h3>
+            <p>Ensuring the privacy and security of your data.</p>
           </div>
           <div className="feature-card">
+            <FaMagic className="feature-icon" />
             <h3>Smart Generation</h3>
-            <p>
-              Digital Cards makes it simple to create professional ID cards for
-              your organization or events.
-            </p>
+            <p>Automatically generate professional and stylish ID cards.</p>
           </div>
           <div className="feature-card">
-            <h3>Secure Data</h3>
-            <p>
-              Digital Cards ensures the security and privacy of your data, giving
-              you peace of mind.
-            </p>
+            <FaCheckCircle className="feature-icon" />
+            <h3>Easy to Use</h3>
+            <p>Our platform is simple and intuitive for everyone.</p>
           </div>
         </div>
       </section>
+
       
-      <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} Digital Cards. All Rights Reserved.</p>
-    </footer>
+  <Footer/>
 
     </div>
   );

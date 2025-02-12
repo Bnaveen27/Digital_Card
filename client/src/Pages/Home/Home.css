@@ -112,7 +112,7 @@
 }
 
 .features-section {
-  background-color: #5e2db6;
+  background-color: #0a9a9a;;
   text-align: center;
   color: white;
   padding: 80px 20px;
@@ -143,7 +143,7 @@
 }
 
 .feature-card {
-  background: #9b72e3;
+  background: #9bc7f0;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -168,15 +168,7 @@
   color: white;
 }
 
-.footer {
-  background-color: rgb(139 92 246);
-  color: white;
-  text-align: center;
-  padding: 10px 0px;
-  margin-top: 20px;
-  font-size: 16px;
-  width: 100%;
-}
+
 
 /* Media Queries for Responsive Design */
 
@@ -278,9 +270,7 @@
       font-size: 1rem;
   }
 
-  .footer {
-      font-size: 14px;
-  }
+  
 }
 
 /* Extra Small Mobile View (320px) */
@@ -312,7 +302,5 @@
       font-size: 0.9rem;
   }
 
-  .footer {
-      font-size: 12px;
-  }
+
 }
